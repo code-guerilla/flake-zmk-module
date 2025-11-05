@@ -157,75 +157,75 @@
             >;
         };
 
-        media {
+media { // LAYER 2
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &bt0    &bt1    &bt2    &bt3    &bt4        &trans  &kp C_PREV  &kp C_PP    &kp C_NEXT  &trans  &trans
+&trans  &out OUT_USB &out OUT_BLE &bt BT_CLR &none   &none       &trans  &kp C_VOLD  &kp C_VOLU  &kp C_MUTE  &trans  &trans
+&trans  &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_HUI &rgb_ug RGB_HUD &trans  &trans      &trans      &trans      &trans  &trans
+                &trans  &trans  &trans    &trans    &trans    &trans  &trans      &trans      &trans      &trans
             >;
         };
 
-        nav {
+        nav { // LAYER 3
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans      &trans  &kp K_APP &kp K_PSCRN &kp K_SLCK &kp K_PAUSE &trans
+&trans  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans      &trans  &kp LEFT  &kp DOWN    &kp UP     &kp RIGHT   &trans
+&trans  &kp LCTRL &kp LALT  &kp LGUI  &trans  &trans      &trans  &trans    &trans      &trans     &trans    &trans
+                &trans  &trans  &trans    &trans    &trans    &trans  &trans      &trans      &trans      &trans
             >;
         };
 
-        num {
+        num { // LAYER 4
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &trans  &kp N7    &kp N8    &kp N9    &kp PLUS   &kp MINUS
+&trans  &kp CARET &kp AMPS  &kp ASTRK &kp LPRN  &kp RPRN    &trans  &kp N4    &kp N5    &kp N6    &kp FSLH   &kp ASTRK
+&trans  &trans    &trans    &kp DOT   &kp COMMA &trans      &trans  &kp N1    &kp N2    &kp N3    &kp DOT    &kp EQUAL
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
             >;
         };
 
-        button {
+        button { // LAYER 5 (Left-hand mouse buttons/scroll)
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mkp LCLK &mkp MB2   &mkp RCLK &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mwh SCROLL_DOWN &mwh SCROLL_UP &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
             >;
         };
 
-        mouse {
+        mouse { // LAYER 6 (Mouse movement on left, buttons/scroll on right)
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &msl MS_LEFT &msd MS_DOWN &msu MS_UP &msr MS_RIGHT &trans      &trans  &trans          &trans          &trans          &trans          &trans
+&trans  &trans      &trans      &trans      &trans      &trans      &trans  &mkp LCLK       &mkp MB2        &mkp RCLK       &trans          &trans
+&trans  &trans      &trans      &trans      &trans      &trans      &trans  &mwh SCROLL_DOWN &mwh SCROLL_UP   &trans          &trans          &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
             >;
         };
 
-        sym {
+        sym { // LAYER 7
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRV   &kp TILDE &kp PIPE  &kp BSLH  &kp QUOT    &trans  &kp N7    &kp N8    &kp N9    &kp SEMI   &kp COLON
+&trans  &kp LBRC  &kp RBRC  &kp LCBR  &kp RCBR  &kp DQUO    &trans  &kp N4    &kp N5    &kp N6    &kp EQUAL  &kp ASTRK
+&trans  &trans    &trans    &kp UNDS  &kp PLUS  &trans      &trans  &kp N1    &kp N2    &kp N3    &kp FSLH   &kp MINUS
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
             >;
         };
 
-        fun {
+        fun { // LAYER 8
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1    &kp F2    &kp F3    &kp F4    &kp F5      &trans  &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
+&trans  &kp F11   &kp F12   &trans    &trans    &trans      &trans  &trans    &trans    &trans    &trans    &trans
+&trans  &trans    &trans    &trans    &trans    &trans      &trans  &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
             >;
         };
 
-        AltGr_ger {
+        AltGr_ger { // LAYER 9 (Based on Miryoku 'de' symbol layer)
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp CIRC  &kp DEG   &kp PIPE  &kp BSLH  &kp GRAVE   &trans  &kp N7    &kp N8    &kp N9    &kp SEMI   &kp COLON
+&trans  &kp LBRC  &kp RBRC  &kp LCBR  &kp RCBR  &kp AT      &trans  &kp N4    &kp N5    &kp N6    &kp EQUAL  &kp ASTRK
+&trans  &kp EURO  &kp MICRO &kp UNDS  &kp PLUS  &trans      &trans  &kp N1    &kp N2    &kp N3    &kp FSLH   &kp MINUS
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
             >;
         };
     };
