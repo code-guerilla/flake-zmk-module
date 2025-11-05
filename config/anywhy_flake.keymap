@@ -142,10 +142,10 @@
 
         base {
             bindings = <
-&studio_unlock  &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp SINGLE_QUOTE  &none
-&none           &hml A LEFT_WIN  &hml R LEFT_ALT  &hml S LEFT_CONTROL  &hml T LEFT_SHIFT  &kp G        &kp M        &hmr N RIGHT_SHIFT  &hmr E RIGHT_CONTROL  &hmr I RIGHT_ALT  &hmr O LEFT_WIN   &none
-&sl 8           &lt 3 Z          &lt 10 X         &kp C                &kp D              &kp V        &kp K        &kp H               &kp COMMA             &lt 10 PERIOD     &lt 3 SLASH       &none
-                &none            &none            &lt 4 ESC            &lt 1 SPACE        &lt 2 TAB    &lt 6 ENTER  &lt 5 BACKSPACE     &lt 7 DELETE          &none             &none
+&studio_unlock  &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp SINGLE_QUOTE  &lt 11 Z
+&kp RIGHT_SHIFT &kp A            &kp R            &kp S                &kp T              &kp G        &kp M        &kp N               &kp E                 &kp I             &kp O             &lt 10 Z 
+&lt 8 Z         &lt 3 Z          &lt 10 X         &kp C                &kp D              &kp V        &kp K        &kp H               &kp COMMA             &lt 10 PERIOD     &lt 3 SLASH       &lt 9 Z
+                &kp LEFT_CONTROL            &kp LEFT_ALT            &lt 4 ESC            &lt 1 SPACE   &lt 2 TAB    &lt 6 ENTER         &lt 5 BACKSPACE       &lt 7 DELETE      &none             &none
             >;
         };
 
