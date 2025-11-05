@@ -134,6 +134,15 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40>;
             tapping-term-ms = <300>;
         };
+
+        tap_hold_mo_layer: tap_hold_mo_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_HOLD_MO_LAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+        };
     };
 
     keymap {
@@ -141,10 +150,10 @@
 
         base {
             bindings = <
-&none  &kp Q     &kp W     &kp F    &kp P      &kp B      &kp J      &kp L          &kp U       &kp Y     &kp SINGLE_QUOTE  &none
-&none  &hml 0 0  &kp R     &kp D    &kp F      &kp G      &kp M      &kp J          &kp K       &kp L     &kp SEMI          &none
-&none  &kp Z     &kp X     &kp C    &kp D      &kp V      &kp K      &kp H          &kp COMMA   &kp DOT   &kp FSLH          &none
-       &kp LGUI  &kp LALT  &kp ESC  &kp SPACE  &kp TAB    &kp ENTER  &kp BACKSPACE  &kp DELETE  &kp LALT  &kp LEFT_WIN
+&none  &kp Q            &kp W            &kp F                &kp P              &kp B      &kp J      &kp L               &kp U                 &kp Y             &kp SINGLE_QUOTE  &none
+&none  &hml A LEFT_WIN  &hml R LEFT_ALT  &hml S LEFT_CONTROL  &hml T LEFT_SHIFT  &kp G      &kp M      &hmr N RIGHT_SHIFT  &hmr E RIGHT_CONTROL  &hmr I RIGHT_ALT  &hmr O LEFT_WIN   &none
+&none  &kp Z            &kp X            &kp C                &kp D              &kp V      &kp K      &kp H               &kp COMMA             &kp DOT           &kp FSLH          &none
+       &none            &none            &kp ESC              &kp SPACE          &kp TAB    &kp ENTER  &kp BACKSPACE       &kp DELETE            &none             &none
             >;
         };
 
@@ -154,6 +163,78 @@
 &none  &kp A     &kp S     &kp D       &kp F      &kp G      &kp H      &kp J          &kp K       &kp L     &kp SEMI      &none
 &none  &kp Z     &kp X     &kp C       &kp V      &kp B      &kp N      &kp M          &kp COMMA   &kp DOT   &kp FSLH      &none
        &kp LGUI  &kp LALT  &kp ESCAPE  &kp SPACE  &kp TAB    &kp ENTER  &kp BACKSPACE  &kp DELETE  &kp LALT  &kp LEFT_WIN
+            >;
+        };
+
+        media {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        nav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        button {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        sym {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        fun {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        AltGr_ger {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
