@@ -160,10 +160,10 @@
 
         mouse {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &kp LC(Z)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Y)        &none
-&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&trans  &trans    &trans    &trans     &trans     &trans    &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-        &trans    &trans    &trans     &trans     &trans    &mkp RCLK  &mkp LCLK       &mkp MCLK       &trans        &trans
+&none  &none    &none    &none     &none     &none    &kp LC(Z)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Y)        &none
+&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &none    &none    &none     &none     &none    &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+        &none    &none    &none     &none     &none    &mkp RCLK  &mkp LCLK       &mkp MCLK       &none        &none
             >;
         };
 
@@ -178,10 +178,10 @@
 
         media {
             bindings = <
-&trans  &none     &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans  &trans  &trans  &none   &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &none   &trans
-        &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans
+&none  &none     &none    &none     &none     &none    &none  &none  &none  &none  &none  &none
+&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &none  &none  &none  &none   &none
+&none  &none    &none    &none     &none     &none    &none  &none  &none  &none  &none   &none
+        &none    &none    &none     &none     &none    &none  &none  &none  &none  &none
             >;
         };
 
@@ -190,7 +190,7 @@
 &none  &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET    &none  &none      &none      &none     &none         &none
 &none  &kp SEMICOLON     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN  &none
 &none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH            &none  &none      &none      &none     &none         &none
-       &none             &kp COMMA     &kp PERIOD    &kp N0        &kp MINUS            &none  &none      &none
+       &none             &kp COMMA     &kp PERIOD    &kp N0        &kp MINUS            &none  &none      &none      &none    &none
             >;
         };
 
@@ -199,16 +199,16 @@
 &none  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)     &none  &none      &none      &none     &none         &none
 &none  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LCTRL      &kp LS(PLUS)     &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN  &none
 &none  &kp TILDE      &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)     &none  &none      &none      &none     &none         &none
-       &none          &none         &kp LS(LPAR)   &kp LS(RPAR)   &kp LS(UNDER)    &none  &none      &none
+       &none          &none         &kp LS(LPAR)   &kp LS(RPAR)   &kp LS(UNDER)    &none  &none      &none      &none    &none
             >;
         };
 
         fun {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans             &trans         &trans        &none   &none
-&none   &none   &none   &none   &none   &none     &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp LEFT_WIN  &none   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans             &trans         &trans        &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans           &trans             &trans
+&none  &none  &none  &none  &none  &none    &none           &none             &none         &none        &none   &none
+&none   &none   &none   &none   &none   &none     &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp LEFT_WIN  &none   &none
+&none  &none  &none  &none  &none  &none    &none           &none             &none         &none        &none  &none
+        &none  &none  &none  &none  &none    &none           &none             &none         &none        &none
             >;
         };
 
@@ -221,12 +221,53 @@
             >;
         };
 
-        AltGr_ger {
+               flake_base {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &kp N6  &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
+&kp ENTER  &kp Q     &kp W     &kp E      &kp R      &kp T     &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
+&kp TAB    &kp A     &kp S     &kp D      &kp F      &kp G     &kp H   &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
+&kp LBKT   &kp Z     &kp X     &kp C      &kp V      &kp B     &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RBKT
+           &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1     &mo 2   &kp LSHFT  &kp LGUI   &kp LALT  &kp LCTRL
+            >;
+        };
+
+        flake_num {
+            bindings = <
+&none  &none     &none          &none      &none      &none       &none      &none   &none   &none   &none      &none
+&none  &kp ESC   &kp BACKSPACE  &kp TAB    &kp ENTER  &kp DEL     &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp MINUS  &none
+&none  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &kp LBKT    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp N0     &none
+&none  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp RBKT    &kp SQT    &kp N1  &kp N2  &kp N3  &kp BSLH   &none
+       &none     &none          &none      &none      &none       &none      &none   &none   &none   &none
+            >;
+        };
+
+        flake_fn {
+            bindings = <
+&none  &none    &none   &none   &none   &none             &none  &none       &none         &none         &none         &none
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &soft_off         &bt2   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_UP  &none
+&none  &kp F10  &kp F4  &kp F5  &kp F6  &kp CAPS          &bt1   &kp RSHFT   &kp RCTRL     &kp RALT      &kp RGUI      &none
+&none  &kp F11  &kp F1  &kp F2  &kp F3  &studio_unlock    &bt0   &kp C_PP    &kp C_PREV    &kp C_NEXT    &kp C_BRI_DN  &none
+       &none    &none   &none   &none   &none             &none  &none       &none         &none         &none
+            >;
+        };
+
+        flake_gaming {
+            bindings = <
+&kp ESC    &kp N1     &kp N2  &kp N3  &kp N4     &kp N5    &kp N6  &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
+&kp CAPS   &kp TAB    &kp Q   &kp W   &kp E      &kp R     &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
+&kp ENTER  &kp LSHFT  &kp A   &kp S   &kp D      &kp F     &kp H   &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
+&kp LBKT   &kp LCTRL  &kp Z   &kp X   &kp C      &kp V     &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RBKT
+           &kp T      &kp G   &kp B   &kp SPACE  &mo 4     &mo 2   &kp LSHFT  &kp LGUI   &kp LALT  &kp LCTRL
+            >;
+        };
+
+        flake_gaming_num {
+            bindings = <
+&none  &none    &none     &none     &none      &none      &none  &none  &none  &none  &none  &none
+&none  &kp ESC  &kp BSPC  &kp CAPS  &kp ENTER  &kp DEL    &none  &none  &none  &none  &none  &none
+&none  &kp N1   &kp N2    &kp N3    &kp N4     &kp N5     &none  &none  &none  &none  &none  &none
+&none  &kp N6   &kp N7    &kp N8    &kp N9     &kp N0     &none  &none  &none  &none  &none  &none
+       &none    &none     &none     &none      &none      &none  &none  &none  &none  &none
             >;
         };
     };
