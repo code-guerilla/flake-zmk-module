@@ -118,7 +118,7 @@
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT_HAND";
-            bindings = <&none>, <&none>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <300>;
@@ -128,7 +128,7 @@
         hmr: homewrow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT_HAND";
-            bindings = <&none>, <&none>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40>;
@@ -142,7 +142,7 @@
         base {
             bindings = <
 &none  &kp Q     &kp W     &kp F    &kp P      &kp B      &kp J      &kp L          &kp U       &kp Y     &kp SINGLE_QUOTE  &none
-&none  &kp A     &kp R     &kp D    &kp F      &kp G      &kp M      &kp J          &kp K       &kp L     &kp SEMI          &none
+&none  &hml 0 0  &kp R     &kp D    &kp F      &kp G      &kp M      &kp J          &kp K       &kp L     &kp SEMI          &none
 &none  &kp Z     &kp X     &kp C    &kp D      &kp V      &kp K      &kp H          &kp COMMA   &kp DOT   &kp FSLH          &none
        &kp LGUI  &kp LALT  &kp ESC  &kp SPACE  &kp TAB    &kp ENTER  &kp BACKSPACE  &kp DELETE  &kp LALT  &kp LEFT_WIN
             >;
