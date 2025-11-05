@@ -134,15 +134,6 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40>;
             tapping-term-ms = <300>;
         };
-
-        tap_hold_mo_layer: tap_hold_mo_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_HOLD_MO_LAYER";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-        };
     };
 
     keymap {
@@ -150,10 +141,10 @@
 
         base {
             bindings = <
-&none        &kp Q            &kp W            &kp F                &kp P              &kp B      &kp J      &kp L               &kp U                 &kp Y             &kp SINGLE_QUOTE  &none
-&none        &hml A LEFT_WIN  &hml R LEFT_ALT  &hml S LEFT_CONTROL  &hml T LEFT_SHIFT  &kp G      &kp M      &hmr N RIGHT_SHIFT  &hmr E RIGHT_CONTROL  &hmr I RIGHT_ALT  &hmr O LEFT_WIN   &none
-&lt 1 GRAVE  &kp Z            &kp X            &kp C                &kp D              &kp V      &kp K      &kp H               &kp COMMA             &kp DOT           &kp FSLH          &none
-             &none            &none            &kp ESC              &kp SPACE          &kp TAB    &kp ENTER  &kp BACKSPACE       &kp DELETE            &none             &none
+&none        &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J      &kp L               &kp U                 &kp Y             &kp SINGLE_QUOTE  &none
+&none        &hml A LEFT_WIN  &hml R LEFT_ALT  &hml S LEFT_CONTROL  &hml T LEFT_SHIFT  &kp G        &kp M      &hmr N RIGHT_SHIFT  &hmr E RIGHT_CONTROL  &hmr I RIGHT_ALT  &hmr O LEFT_WIN   &none
+&lt 1 GRAVE  &kp Z            &kp X            &kp C                &kp D              &kp V        &kp K      &kp H               &kp COMMA             &none             &kp FSLH          &none
+             &none            &none            &none                &lt 3 SPACE        &lt 6 TAB    &kp ENTER  &kp BACKSPACE       &kp DELETE            &none             &none
             >;
         };
 
