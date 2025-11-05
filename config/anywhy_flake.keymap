@@ -144,26 +144,26 @@
             bindings = <
 &studio_unlock  &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp SINGLE_QUOTE  &none
 &none           &hml A LEFT_WIN  &hml R LEFT_ALT  &hml S LEFT_CONTROL  &hml T LEFT_SHIFT  &kp G        &kp M        &hmr N RIGHT_SHIFT  &hmr E RIGHT_CONTROL  &hmr I RIGHT_ALT  &hmr O LEFT_WIN   &none
-&none           &lt 3 Z          &lt 10 X         &kp C                &kp D              &kp V        &kp K        &kp H               &kp COMMA             &lt 10 PERIOD     &lt 3 SLASH       &none
+&sl 8           &lt 3 Z          &lt 10 X         &kp C                &kp D              &kp V        &kp K        &kp H               &kp COMMA             &lt 10 PERIOD     &lt 3 SLASH       &none
                 &none            &none            &lt 4 ESC            &lt 1 SPACE        &lt 2 TAB    &lt 6 ENTER  &lt 5 BACKSPACE     &lt 7 DELETE          &none             &none
             >;
         };
 
         nav {
             bindings = <
-&none  &none     &none     &none      &none      &none    &kp K_REDO       &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp CAPS         &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &none
-&none  &none     &none     &none      &none      &none    &kp C_AC_INSERT  &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &none
-       &none     &none     &none      &none      &none    &kp ENTER        &kp BSPC     &kp DEL     &none      &none
+&none  &none     &none     &none      &none      &none    &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Y)  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
+&none  &none     &none     &none      &none      &none    &none      &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none
+       &none     &none     &none      &none      &none    &kp ENTER  &kp BSPC   &kp DEL    &none      &none
             >;
         };
 
         mouse {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &none
-&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&trans  &trans    &trans    &trans     &trans     &trans    &trans      &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-        &trans    &trans    &trans     &trans     &trans    &mkp RCLK   &mkp LCLK       &mkp MCLK       &trans        &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &kp LC(Z)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Y)        &none
+&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&trans  &trans    &trans    &trans     &trans     &trans    &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+        &trans    &trans    &trans     &trans     &trans    &mkp RCLK  &mkp LCLK       &mkp MCLK       &trans        &trans
             >;
         };
 
@@ -187,10 +187,10 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans             &trans         &trans        &none   &none
-&none   &none   &none   &none   &none   &none     &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp LEFT_WIN  &none   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans             &trans         &none         &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans           &trans             &trans
+&none  &kp    &kp    &kp    &kp    &kp      &kp              &kp                &kp            &kp           &none  &none
+&none  &none  &none  &none  &none  &none    &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp LEFT_WIN  &none  &none
+&none  &kp    &kp    &kp    &kp    &kp      &kp              &kp                &kp            &none         &none  &none
+       &kp    &kp    &kp    &kp    &kp      &kp              &kp                &kp
             >;
         };
 
