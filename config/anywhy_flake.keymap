@@ -169,10 +169,10 @@
 
         button {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &none
-        &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
+&none  &kp K_UNDO  &kp       &kp        &kp        &kp    &kp  &kp        &kp        &kp       &kp       &none
+&none  &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT  &kp    &kp  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
+&none  &kp         &kp       &kp        &kp        &kp    &kp  &kp        &kp        &kp       &kp       &none
+       &kp         &kp       &kp        &kp        &kp    &kp  &kp        &kp        &kp       &kp
             >;
         };
 
