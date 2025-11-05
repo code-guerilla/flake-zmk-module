@@ -159,44 +159,44 @@
 
         mouse {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
-            >;
+&trans  &trans    &trans    &trans     &trans     &trans    &kp K_REDO       &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
+&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans           &trans       &trans      &trans     &trans      &none
+&trans  &trans    &trans    &trans     &trans     &trans    &trans           &trans       &trans      &trans     &trans      &none
+        &trans    &trans    &trans     &trans     &trans    &trans           &trans       &trans      &trans     &trans    
+            >;         
         };
 
         button {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &none
         &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         media {
             bindings = <
-&trans  &none     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT    &trans  &trans  &trans  &trans  &trans  &none
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
         &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         num {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans         &trans         &none
-&none   &none     &none     &none      &none      &none     &kp RIGHT_SHIFT  &kp RIGHT_CONTROL   &kp RIGHT_ALT  &kp LEFT_WIN   &none
-&trans  &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans         &trans         &trans  
-        &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans         &trans         &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans              &trans         &none
+&none   &none     &none     &none      &none      &none     &none            &kp RIGHT_SHIFT     &kp RIGHT_CONTROL   &kp RIGHT_ALT  &kp LEFT_WIN   &none
+&trans  &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans              &trans         &none
+        &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans              &trans         &trans
             >;
         };
 
         sym {
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans         &trans         &none
-&none   &none     &none     &none      &none      &none     &kp RIGHT_SHIFT  &kp RIGHT_CONTROL   &kp RIGHT_ALT  &kp LEFT_WIN   &none
+&none   &none     &none     &none      &none      &none     &none            &kp RIGHT_SHIFT  &kp RIGHT_CONTROL   &kp RIGHT_ALT  &kp LEFT_WIN   &none
 &trans  &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans         &trans         &trans  
         &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans         &trans         &trans
             >;
@@ -205,7 +205,7 @@
         fun {
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans         &trans         &none
-&none   &none     &none     &none      &none      &none     &kp RIGHT_SHIFT  &kp RIGHT_CONTROL   &kp RIGHT_ALT  &kp LEFT_WIN   &none
+&none   &none     &none     &none      &none      &none     &none            &kp RIGHT_SHIFT  &kp RIGHT_CONTROL   &kp RIGHT_ALT  &kp LEFT_WIN   &none
 &trans  &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans         &trans         &trans  
         &trans    &trans    &trans     &trans     &trans    &trans           &trans              &trans         &trans         &trans
             >;
