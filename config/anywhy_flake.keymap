@@ -68,42 +68,36 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(Y)>;
-            label = "U_RDO";
         };
 
         U_PST: U_PST {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(V)>;
-            label = "U_PST";
         };
 
         U_CPY: U_CPY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(C)>;
-            label = "U_CPY";
         };
 
-        U_CUT: U_CPY {
+       U_CUT: U_CUT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(X)>;
-            label = "U_CPY";
         };
 
         U_UND: U_UND {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(Z)>;
-            label = "U_UND";
         };    
 
        U_BOOT: U_BOOT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bootloader>;
-            label = "U_UND";
         };
  
     };
