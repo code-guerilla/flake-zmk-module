@@ -37,42 +37,36 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0 &bt BT_CLR>;
-            label = "BT_CLR_0";
         };
 
         bt_clr_1: bt_clr_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1 &bt BT_CLR>;
-            label = "BT_CLR_1";
         };
 
         bt_clr_2: bt_clr_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 2 &bt BT_CLR>;
-            label = "BT_CLR_2";
         };
 
         bt_clr_3: bt_clr_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 3 &bt BT_CLR>;
-            label = "BT_CLR_3";
         };
 
         bt_clr_4: bt_clr_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 4 &bt BT_CLR>;
-            label = "BT_CLR_4";
         };
     };
 
     behaviors {
         bt0: bt0 {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT0";
             bindings = <&bt BT_SEL 0>, <&bt_clr_0>;
 
             #binding-cells = <0>;
@@ -81,7 +75,6 @@
 
         bt1: bt1 {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT1";
             bindings = <&bt BT_SEL 1>, <&bt_clr_1>;
 
             #binding-cells = <0>;
@@ -90,7 +83,6 @@
 
         bt2: bt2 {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT2";
             bindings = <&bt BT_SEL 2>, <&bt_clr_2>;
 
             #binding-cells = <0>;
@@ -99,7 +91,6 @@
 
         bt3: bt3 {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT3";
             bindings = <&bt BT_SEL 3>, <&bt_clr_3>;
 
             #binding-cells = <0>;
@@ -108,7 +99,6 @@
 
         bt4: bt4 {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT4";
             bindings = <&bt BT_SEL 4>, <&bt_clr_4>;
 
             #binding-cells = <0>;
@@ -117,7 +107,6 @@
 
         hml: homewrow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT_HAND";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -127,7 +116,6 @@
 
         hmr: homewrow_mods_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT_HAND";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
